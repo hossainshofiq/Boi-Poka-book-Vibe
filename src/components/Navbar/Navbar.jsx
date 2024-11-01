@@ -5,8 +5,8 @@ const Navbar = () => {
 
     const links = <>
         <li><NavLink to='/'>Home</NavLink></li>
-        <li><a>Listed Books</a></li>
-        <li><a>Pages to Read</a></li>
+        <li><NavLink to='/listedBooks'>Listed Books</NavLink></li>
+        <li><NavLink to='/pagesToRead'>Pages to Read</NavLink></li>
     </>
 
     return (
@@ -42,7 +42,7 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div className="navbar-end">
+            <div className="navbar-end gap-4">
                 <a className="btn">Sign In</a>
                 <a className="btn">Sign Up</a>
             </div>
