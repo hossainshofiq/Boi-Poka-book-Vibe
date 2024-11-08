@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { addToStoredReadList, addToWishList } from '../utilities/addToDb';
+import { Helmet } from 'react-helmet';
 
 const BookDetail = () => {
     const { bookId } = useParams();
@@ -23,6 +24,9 @@ const BookDetail = () => {
 
     return (
             <div className="hero-content flex-col lg:flex-row">
+                <Helmet>
+                    <title>boi poka | Details</title>
+                </Helmet>
 
                 <img src={image} className="rounded-2xl bg-base-200 p-16 h-[564px]" />
 
